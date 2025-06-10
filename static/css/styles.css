@@ -16,7 +16,7 @@ body {
 /* Container */
 .container {
     max-width: 1280px;
-    margin-top: 20vh;
+    margin-top: 30vh;
     
 
 }
@@ -79,15 +79,15 @@ body {
     border-radius: 8px;
 }
 .contact-section {
-    margin-left: 10vh;
+    margin-left:6vh;
 }
 .main-content {
-    margin-left: 10vh;
+    margin-left:6vh;
 }
 .skills-section {
-    margin-left: 10vh;
+    margin-left:6vh;
 }
 .container {
-       margin-left: 10vh;
+       margin-left:6vh;
 }
 }
