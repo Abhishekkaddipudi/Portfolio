@@ -447,3 +447,28 @@ fetch('/static/cards.json')
     document.getElementById('nav-toggle').addEventListener('click', function () {
         document.getElementById('nav-links').classList.toggle('show');
     });
+
+function copyPhoneNumber() {
+    const phoneNumber = "+91-9148485217";
+
+    if (confirm("Do you want to copy the phone number to clipboard?")) {
+        const textarea = document.createElement("textarea");
+        textarea.value = phoneNumber;
+        document.body.appendChild(textarea);
+
+        textarea.select();
+        try {
+            const successful = document.execCommand("copy");
+            if (successful) {
+                alert("Phone number copied to clipboard!");
+            } else {
+                alert("Copy command failed.");
+            }
+        } catch (err) {
+            console.error("Copy failed:", err);
+            alert("An error occurred while copying.");
+        }
+
+        document.body.removeChild(textarea);
+    }
+}
